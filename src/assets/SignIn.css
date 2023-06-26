@@ -1,0 +1,83 @@
+.signin{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signin form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 200px;
+    width: 25%;
+    margin-inline: auto;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.signin form h1{
+    font-size: 40px;
+}
+
+.signin form .input__field{
+    position: relative;
+    width: 100%;
+}
+
+.signin form .input__field input{
+    width: 100%;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px;
+    color: white;
+}
+
+.signin form .input__field label{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    font-size: medium;
+    transition: all 0.2s;
+}
+
+.signin form .input__field input:focus~label,
+.signin form .input__field input:valid~label{
+    left: 10px;
+    top: 0;
+    font-size: 10px;
+}
+
+.signin button{
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin form h4{
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    gap: 10px;
+    color: gray;
+}
+
+.signin form .signin__link{
+    color: white;
+    text-decoration: none;
+}
+
+.signin form .signin__link:hover{
+    color: #e50914;
+    cursor: pointer;
+}
